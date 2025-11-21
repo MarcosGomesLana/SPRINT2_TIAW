@@ -1,0 +1,29 @@
+*{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.dropdown-menu {
+  min-width: 100%;
+  
+}
+
+.btn:active,
+.btn:focus,
+.nav-link:focus,
+.nav-link:active,
+.dropdown-toggle:focus,
+.dropdown-toggle:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.dropdown-item:hover{
+    background-color:#ffffff;
+    color: #000000;
+}
+
+
+

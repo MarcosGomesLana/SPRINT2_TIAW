@@ -1,0 +1,327 @@
+{
+  "usuarios": [
+    {
+      "ID": 1,
+      "Nome": "Administrador EPA",
+      "Celular": "31999998888",
+      "CPF_CNPJ": "12345678000155",
+      "Tipo": "admin",
+      "Status": false,
+      "Email": "admin@epa.com",
+      "Senha": "12345",
+      "Endereco": "Av. Amazonas, 5000 - Belo Horizonte/MG",
+      "id": "105c"
+    },
+    {
+      "ID": 2,
+      "Nome": "Hebert Tadeu Liberato",
+      "Celular": "31985503628",
+      "CPF_CNPJ": "12345678901",
+      "Tipo": "comprador",
+      "Status": true,
+      "Email": "hebertliberato@gmail.com",
+      "Senha": "12345",
+      "Endereco": "Rua Exemplo, 123, Bairro X",
+      "id": "40f1"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Iogurte Natural 170g",
+      "Descricao": "Iogurte integral natural, marca Danvita, com validade próxima.",
+      "PrecoOriginal": 4.5,
+      "PrecoComDesconto": 2.99,
+      "DataValidade": "10/10/2025",
+      "Quantidade": 25,
+      "categoria": "Mercado",
+      "imagem": "mercado.png"
+    },
+    {
+      "id": "2",
+      "nome": "Pão de Queijo",
+      "imagem": "padaria.png",
+      "categoria": "Padaria",
+      "Descricao": "Pão de queijo artesanal, crocante por fora e macio por dentro. Ideal para o café da manhã.",
+      "PrecoOriginal": 15.99,
+      "PrecoComDesconto": 13.99,
+      "DataValidade": "02/11/2025",
+      "Quantidade": 25
+    },
+    {
+      "id": "3",
+      "nome": "Leite Integral",
+      "imagem": "mercado.png",
+      "categoria": "Mercado",
+      "Descricao": "Leite integral pasteurizado, embalado em embalagem longa vida.",
+      "PrecoOriginal": 4.5,
+      "PrecoComDesconto": 3.99,
+      "DataValidade": "05/11/2025",
+      "Quantidade": 40
+    },
+    {
+      "id": "4",
+      "nome": "Arroz Branco",
+      "imagem": "mercado.png",
+      "categoria": "Mercado",
+      "Descricao": "Arroz branco tipo 1, grãos soltos e cozimento uniforme.",
+      "PrecoOriginal": 5.8,
+      "PrecoComDesconto": 5.2,
+      "DataValidade": "01/10/2027",
+      "Quantidade": 100
+    },
+    {
+      "id": "5",
+      "nome": "Feijão Preto",
+      "imagem": "mercado.png",
+      "categoria": "Mercado",
+      "Descricao": "Feijão preto selecionado, grãos limpos e consistentes.",
+      "PrecoOriginal": 7.2,
+      "PrecoComDesconto": 6.49,
+      "DataValidade": "01/08/2027",
+      "Quantidade": 80
+    },
+    {
+      "id": "6",
+      "nome": "Açúcar Refinado",
+      "imagem": "mercado.png",
+      "categoria": "Mercado",
+      "Descricao": "Açúcar refinado para uso diário em bebidas e receitas.",
+      "PrecoOriginal": 3.5,
+      "PrecoComDesconto": 3.1,
+      "DataValidade": "15/09/2027",
+      "Quantidade": 60
+    },
+    {
+      "id": "7",
+      "nome": "Óleo de Soja",
+      "imagem": "mercado.png",
+      "categoria": "Mercado",
+      "Descricao": "Óleo de soja refinado, indicado para frituras e preparos em geral.",
+      "PrecoOriginal": 6.99,
+      "PrecoComDesconto": 5.99,
+      "DataValidade": "01/12/2027",
+      "Quantidade": 50
+    },
+    {
+      "id": "8",
+      "nome": "Macarrão Espaguete",
+      "imagem": "mercado.png",
+      "categoria": "Mercado",
+      "Descricao": "Macarrão espaguete tradicional, massa seca de boa qualidade.",
+      "PrecoOriginal": 3.1,
+      "PrecoComDesconto": 2.79,
+      "DataValidade": "01/11/2027",
+      "Quantidade": 120
+    },
+    {
+      "id": "9",
+      "nome": "Ovos Brancos (Dúzia)",
+      "imagem": "mercado.png",
+      "categoria": "Mercado",
+      "Descricao": "Dúzia de ovos brancos frescos, acondicionados refrigerados.",
+      "PrecoOriginal": 10,
+      "PrecoComDesconto": 8.99,
+      "DataValidade": "04/11/2025",
+      "Quantidade": 30
+    },
+    {
+      "id": "10",
+      "nome": "Detergente para Louças",
+      "imagem": "mercado.png",
+      "categoria": "Mercado",
+      "Descricao": "Detergente líquido concentrado, remove gordura fácil e rende bem.",
+      "PrecoOriginal": 2.8,
+      "PrecoComDesconto": 2.39,
+      "DataValidade": "01/01/2027",
+      "Quantidade": 70
+    },
+    {
+      "id": "11",
+      "nome": "Sabonete em Barra",
+      "imagem": "mercado.png",
+      "categoria": "Mercado",
+      "Descricao": "Sabonete hidratante em barra, fragrância suave.",
+      "PrecoOriginal": 1.99,
+      "PrecoComDesconto": 1.59,
+      "DataValidade": "01/03/2027",
+      "Quantidade": 150
+    },
+    {
+      "id": "12",
+      "nome": "Papel Higiênico (Rolo)",
+      "imagem": "mercado.png",
+      "categoria": "Mercado",
+      "Descricao": "Rolo de papel higiênico de uso diário, qualidade padrão.",
+      "PrecoOriginal": 1.5,
+      "PrecoComDesconto": 1.29,
+      "DataValidade": "07/11/2025",
+      "Quantidade": 200
+    },
+    {
+      "id": "13",
+      "nome": "Peito de Frango",
+      "imagem": "mercado.png",
+      "categoria": "Mercado",
+      "Descricao": "Peito de frango fresco, sem osso e sem pele, embalado refrigerado.",
+      "PrecoOriginal": 22.9,
+      "PrecoComDesconto": 19.99,
+      "DataValidade": "10/11/2025",
+      "Quantidade": 20
+    },
+    {
+      "id": "14",
+      "nome": "Tomate",
+      "imagem": "hortifruti.png",
+      "categoria": "Hortifrúti",
+      "Descricao": "Tomate fresco, suculento, ideal para saladas e molhos.",
+      "PrecoOriginal": 8.9,
+      "PrecoComDesconto": 6.99,
+      "DataValidade": "09/11/2025",
+      "Quantidade": 45
+    },
+    {
+      "id": "15",
+      "nome": "Banana",
+      "imagem": "hortifruti.png",
+      "categoria": "Hortifrúti",
+      "Descricao": "Banana nanica madura, perfumada e pronta para consumo.",
+      "PrecoOriginal": 4.99,
+      "PrecoComDesconto": 3.99,
+      "DataValidade": "05/11/2025",
+      "Quantidade": 60
+    },
+    {
+      "id": "16",
+      "nome": "Manteiga",
+      "imagem": "mercado.png",
+      "categoria": "Mercado",
+      "Descricao": "Manteiga cremosa, ótima para passar e cozinhar.",
+      "PrecoOriginal": 9.5,
+      "PrecoComDesconto": 8.49,
+      "DataValidade": "15/11/2025",
+      "Quantidade": 35
+    },
+    {
+      "id": "17",
+      "nome": "Pão de Forma",
+      "imagem": "padaria.png",
+      "categoria": "Padaria",
+      "Descricao": "Pão de forma fatiado, macio, ideal para sanduíches.",
+      "PrecoOriginal": 7.99,
+      "PrecoComDesconto": 6.49,
+      "DataValidade": "08/11/2025",
+      "Quantidade": 40
+    },
+    {
+      "id": "18",
+      "nome": "Refrigerante Cola",
+      "imagem": "mercado.png",
+      "categoria": "Mercado",
+      "Descricao": "Refrigerante sabor cola em garrafa PET, refrescante.",
+      "PrecoOriginal": 5,
+      "PrecoComDesconto": 4.49,
+      "DataValidade": "01/11/2025",
+      "Quantidade": 90
+    },
+    {
+      "id": "19",
+      "nome": "Cerveja Lager",
+      "imagem": "mercado.png",
+      "categoria": "Mercado",
+      "Descricao": "Cerveja lager leve e gelada, ideal para encontros.",
+      "PrecoOriginal": 4.2,
+      "PrecoComDesconto": 3.79,
+      "DataValidade": "16/11/2025",
+      "Quantidade": 120
+    },
+    {
+      "id": "20",
+      "nome": "Batata Inglesa",
+      "imagem": "hortifruti.png",
+      "categoria": "Hortifrúti",
+      "Descricao": "Batata inglesa firme, indicada para fritar, assar e cozidos.",
+      "PrecoOriginal": 6.5,
+      "PrecoComDesconto": 5.49,
+      "DataValidade": "06/11/2025",
+      "Quantidade": 80
+    }
+  ],
+  "pedidos": [
+    {
+      "ID": 1,
+      "ID_Comprador": 2,
+      "Produtos": [
+        {
+          "ID_Produto": 1,
+          "Quantidade": 3,
+          "PrecoUnitario": 2.99
+        },
+        {
+          "ID_Produto": 2,
+          "Quantidade": 1,
+          "PrecoUnitario": 5
+        }
+      ],
+      "ValorTotal": 13.97,
+      "DataCompra": "2025-10-04",
+      "Status": "Concluído",
+      "id": "da03"
+    }
+  ],
+  "contatos": [
+    {
+      "ID": 1,
+      "Nome": "Max",
+      "Sobrenome": "Will",
+      "telefone": "319252525252",
+      "email": "max@gmail.com",
+      "mensagem": "Olá, gostária de mais cupons de desconto.",
+      "id": "53d6"
+    },
+    {
+      "ID": 2,
+      "Nome": "Ana",
+      "Sobrenome": "Costa",
+      "telefone": "31988887777",
+      "email": "ana.costa@email.com",
+      "mensagem": "Olá, gostaria de receber novidades sobre promoções.",
+      "id": "0547"
+    }
+  ],
+  "favoritos": [
+    {
+      "ID": 1,
+      "ID_Usuario": 2,
+      "produtosFavoritos": [
+        {
+          "ID_Produto": 1
+        },
+        {
+          "ID_Produto": 2
+        },
+        {
+          "ID_Produto": 3
+        },
+        {
+          "ID_Produto": 4
+        },
+        {
+          "ID_Produto": 7
+        }
+      ],
+      "id": "9456"
+    },
+    {
+      "ID": 2,
+      "ID_Usuario": 1,
+      "produtosFavoritos": [
+        {
+
+        }
+        
+      ],
+      "id": "0fba"
+    }
+  ]
+}
