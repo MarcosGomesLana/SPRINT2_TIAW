@@ -1,3 +1,11 @@
+
+/* ------------------------ SALVAR PRODUTO DETALHES ----------------------- */
+
+function verDetalhes(produto) {
+    localStorage.setItem("produtoSelecionado", JSON.stringify(produto));
+    window.location.href = "detalhesproduto.html";
+}
+
 //***FUNÇÃO QUE BUSCA OS DADAOS POR REQUISIÇÃO HTTP***
 async function buscarDados() {
     try {
@@ -67,7 +75,7 @@ function montarPaginaHome(dadosParaRenderizar) {
     noResultsDiv.style.display = 'none';
     containerLista.innerHTML = dadosParaRenderizar.map(item => {
         const caminhoImagem = `assets/img/${item.imagem}`; 
-        const linkDetalhes = `detalhes.html?id=${item.id}`; // Link temporário
+        const linkDetalhes = `detalhesproduto.html?id=${item.id}`; // Link temporário
 
         return `
             <div class="col-12 col-md-6 col-lg-3 mb-4">
@@ -80,10 +88,47 @@ function montarPaginaHome(dadosParaRenderizar) {
                         <h6><s>R$ ${item.PrecoOriginal}</s></h6>
                         <h5 style="color:#1d7553"><strong>R$ ${item.PrecoComDesconto}</strong></h5>
                         <h6 style="color:#1d7553"><strong>${item.DataValidade}</strong></h6>
-                        <a href="${linkDetalhes}" style="background-color: #6d1e0d; border-color: white;" class="btn btn-primary mt-auto">Ver Detalhes</a>
+                        <a onclick="verDetalhes(${JSON.stringify(item).replace(/"/g, '&quot;')});" href="${linkDetalhes}" style="background-color: #6d1e0d; border-color: white;" class="btn btn-primary mt-auto">Ver Detalhes</a>
                     </div>
                 </div>
             </div>
         `;
     }).join('');
+}
+
+//***FUNÇÃO PARA RETORNAR O ID DO USUÁRIO COM STATUS == TRUE*/
+
+async function BuscarIDUsuarioLogado() {
+    try {
+        const response = await fetch('http://localhost:3000/usuarios');
+        if (!response.ok) {
+            throw new Error(`Erro HTTP ao buscar JSON: ${response.status}`);
+        }
+
+        const dados = await response.json();
+
+        const usuarioAtivo = dados.find(item => item.Status === true);
+        return usuarioAtivo ? usuarioAtivo.ID : null;
+
+    } catch (error) {
+        console.error("Falha CRÍTICA ao carregar o arquivo usuario.json:", error);
+        return null;
+    }
+}
+
+async function HomePageLogin(){
+    const user = await BuscarIDUsuarioLogado();
+    const multiUser = document.getElementsByClassName("common-user");
+
+    try{
+        if (user != null){
+            for (let i = 0; i < multiUser.length; i++){
+
+                multiUser[i].style.display = "block";
+            }
+    }
+    }catch(error){
+        console.log("Usuário não realizou login: ", error);
+    }
+
 }

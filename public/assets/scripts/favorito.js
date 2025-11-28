@@ -1,3 +1,12 @@
+
+/* ------------------------ SALVAR PRODUTO DETALHES ----------------------- */
+
+function verDetalhes(produto) {
+    localStorage.setItem("produtoSelecionado", JSON.stringify(produto));
+    window.location.href = "detalhesproduto.html";
+}
+
+
 //***FUNÇÃO QUE BUSCA OS DADAOS POR REQUISIÇÃO HTTP***
 async function buscarDados() {
     try {
@@ -74,7 +83,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
-
+try{
     //const produtosFiltrados = produtos.filter(produto => idsFavoritos.includes(produto.id));
     let objetoFavoritos = await BuscarArrayDeProdutos();
     let idsFavoritos = objetoFavoritos.produtosFavoritos;
@@ -96,6 +105,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     // Monta a página pela primeira vez com todos os produtos
     montarPaginaFavoritos(dadosFiltradosFavoritos);
+}catch(error){
+
+    const title = document.getElementById('noDate');
+    containerLista.innerHTML = ''; // Limpa a lista de produtos
+    title.innerHTML = "<h3>Desculpe, problema ao acessar favoritos.</h3>";
+    title.style.display = "block";
+    title.style.marginBottom = "300px";
+    console.log("Erro: ", error);
+    return;
+}
 });
 
 
@@ -107,17 +126,21 @@ function montarPaginaFavoritos(dadosParaRenderizar) {
     if (!containerLista || !noResultsDiv) return;
 
     // Se a lista de dados para renderizar estiver vazia, mostra a mensagem "Nenhum produto"
-    if (dadosParaRenderizar.length === 0) {
+    if(!dadosParaRenderizar || dadosParaRenderizar.length === 0){
         containerLista.innerHTML = ''; // Limpa a lista de produtos
         noResultsDiv.style.display = 'block'; // Mostra a mensagem
+        noResultsDiv.innerHTML = "<h3>Favorite produtos para acessar a tela de favoritos</h3>";
+        noResultsDiv.style.marginBottom = "300px";
         return;
+
     }
+    
 
     // Se houver produtos, esconde a mensagem e monta os cards
     noResultsDiv.style.display = 'none';
     containerLista.innerHTML = dadosParaRenderizar.map(item => {
         const caminhoImagem = `assets/img/${item.imagem}`; 
-        const linkDetalhes = `detalhes.html?id=${item.id}`; // Link temporário
+        const linkDetalhes = `detalhesproduto.html?id=${item.id}`; // Link temporário
 
         return `
             <div class="col-12 col-md-6 col-lg-3 mb-4">
@@ -146,8 +169,7 @@ function montarPaginaFavoritos(dadosParaRenderizar) {
                             </a>
                             </li>
                         </ul>
-                        <a href="${linkDetalhes}" style="background-color: #6d1e0d; border-color: white;" class="btn btn-primary mt-auto">Ver Detalhes</a>
-                    </div>
+                     <a onclick="verDetalhes(${JSON.stringify(item).replace(/"/g, '&quot;')});" href="${linkDetalhes}" style="background-color: #6d1e0d; border-color: white;" class="btn btn-primary mt-auto">Ver Detalhes</a>                    </div>
                 </div>
             </div>
         `;

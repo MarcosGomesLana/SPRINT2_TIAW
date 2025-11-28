@@ -29,6 +29,7 @@
     {
       "id": "1",
       "nome": "Iogurte Natural 170g",
+      "nomeDaLoja": "Supermecados EPA",
       "Descricao": "Iogurte integral natural, marca Danvita, com validade próxima.",
       "PrecoOriginal": 4.5,
       "PrecoComDesconto": 2.99,
@@ -40,6 +41,7 @@
     {
       "id": "2",
       "nome": "Pão de Queijo",
+      "nomeDaLoja": "Supermecados BH",
       "imagem": "padaria.png",
       "categoria": "Padaria",
       "Descricao": "Pão de queijo artesanal, crocante por fora e macio por dentro. Ideal para o café da manhã.",
@@ -51,6 +53,7 @@
     {
       "id": "3",
       "nome": "Leite Integral",
+      "nomeDaLoja": "Supermecados OPA",
       "imagem": "mercado.png",
       "categoria": "Mercado",
       "Descricao": "Leite integral pasteurizado, embalado em embalagem longa vida.",
@@ -62,6 +65,7 @@
     {
       "id": "4",
       "nome": "Arroz Branco",
+      "nomeDaLoja": "Supermecados Dupovo",
       "imagem": "mercado.png",
       "categoria": "Mercado",
       "Descricao": "Arroz branco tipo 1, grãos soltos e cozimento uniforme.",
@@ -73,6 +77,7 @@
     {
       "id": "5",
       "nome": "Feijão Preto",
+      "nomeDaLoja": "Supermecados BH",
       "imagem": "mercado.png",
       "categoria": "Mercado",
       "Descricao": "Feijão preto selecionado, grãos limpos e consistentes.",
@@ -84,6 +89,7 @@
     {
       "id": "6",
       "nome": "Açúcar Refinado",
+      "nomeDaLoja": "Supermecados EPA",
       "imagem": "mercado.png",
       "categoria": "Mercado",
       "Descricao": "Açúcar refinado para uso diário em bebidas e receitas.",
@@ -95,6 +101,7 @@
     {
       "id": "7",
       "nome": "Óleo de Soja",
+      "nomeDaLoja": "Supermecados OPA",
       "imagem": "mercado.png",
       "categoria": "Mercado",
       "Descricao": "Óleo de soja refinado, indicado para frituras e preparos em geral.",
@@ -106,6 +113,7 @@
     {
       "id": "8",
       "nome": "Macarrão Espaguete",
+      "nomeDaLoja": "Supermecados BH",
       "imagem": "mercado.png",
       "categoria": "Mercado",
       "Descricao": "Macarrão espaguete tradicional, massa seca de boa qualidade.",
@@ -117,6 +125,7 @@
     {
       "id": "9",
       "nome": "Ovos Brancos (Dúzia)",
+      "nomeDaLoja": "Supermecados EPA",
       "imagem": "mercado.png",
       "categoria": "Mercado",
       "Descricao": "Dúzia de ovos brancos frescos, acondicionados refrigerados.",
@@ -128,6 +137,7 @@
     {
       "id": "10",
       "nome": "Detergente para Louças",
+      "nomeDaLoja": "Supermecados EPA",
       "imagem": "mercado.png",
       "categoria": "Mercado",
       "Descricao": "Detergente líquido concentrado, remove gordura fácil e rende bem.",
@@ -139,6 +149,7 @@
     {
       "id": "11",
       "nome": "Sabonete em Barra",
+      "nomeDaLoja": "Supermecados BH",
       "imagem": "mercado.png",
       "categoria": "Mercado",
       "Descricao": "Sabonete hidratante em barra, fragrância suave.",
@@ -150,6 +161,7 @@
     {
       "id": "12",
       "nome": "Papel Higiênico (Rolo)",
+      "nomeDaLoja": "Supermecados Dupovo",
       "imagem": "mercado.png",
       "categoria": "Mercado",
       "Descricao": "Rolo de papel higiênico de uso diário, qualidade padrão.",
@@ -161,6 +173,7 @@
     {
       "id": "13",
       "nome": "Peito de Frango",
+      "nomeDaLoja": "Supermecados BH",
       "imagem": "mercado.png",
       "categoria": "Mercado",
       "Descricao": "Peito de frango fresco, sem osso e sem pele, embalado refrigerado.",
@@ -172,6 +185,7 @@
     {
       "id": "14",
       "nome": "Tomate",
+      "nomeDaLoja": "Supermecados EPA",
       "imagem": "hortifruti.png",
       "categoria": "Hortifrúti",
       "Descricao": "Tomate fresco, suculento, ideal para saladas e molhos.",
@@ -183,6 +197,7 @@
     {
       "id": "15",
       "nome": "Banana",
+      "nomeDaLoja": "Supermecados EPA",
       "imagem": "hortifruti.png",
       "categoria": "Hortifrúti",
       "Descricao": "Banana nanica madura, perfumada e pronta para consumo.",
@@ -194,6 +209,7 @@
     {
       "id": "16",
       "nome": "Manteiga",
+      "nomeDaLoja": "Supermecados BH",
       "imagem": "mercado.png",
       "categoria": "Mercado",
       "Descricao": "Manteiga cremosa, ótima para passar e cozinhar.",
@@ -205,6 +221,7 @@
     {
       "id": "17",
       "nome": "Pão de Forma",
+      "nomeDaLoja": "Supermecados OPA",
       "imagem": "padaria.png",
       "categoria": "Padaria",
       "Descricao": "Pão de forma fatiado, macio, ideal para sanduíches.",
@@ -216,6 +233,7 @@
     {
       "id": "18",
       "nome": "Refrigerante Cola",
+      "nomeDaLoja": "Supermecados Dupovo",
       "imagem": "mercado.png",
       "categoria": "Mercado",
       "Descricao": "Refrigerante sabor cola em garrafa PET, refrescante.",
@@ -227,6 +245,7 @@
     {
       "id": "19",
       "nome": "Cerveja Lager",
+      "nomeDaLoja": "Supermecados EPA",
       "imagem": "mercado.png",
       "categoria": "Mercado",
       "Descricao": "Cerveja lager leve e gelada, ideal para encontros.",
@@ -238,6 +257,7 @@
     {
       "id": "20",
       "nome": "Batata Inglesa",
+      "nomeDaLoja": "Supermecados BH",
       "imagem": "hortifruti.png",
       "categoria": "Hortifrúti",
       "Descricao": "Batata inglesa firme, indicada para fritar, assar e cozidos.",
@@ -293,8 +313,7 @@
     {
       "ID": 1,
       "ID_Usuario": 2,
-      "produtosFavoritos": [
-        {
+      "produtosFavoritos": [ {
           "ID_Produto": 1
         },
         {
@@ -305,21 +324,14 @@
         },
         {
           "ID_Produto": 4
-        },
-        {
-          "ID_Produto": 7
-        }
-      ],
+        }],
       "id": "9456"
     },
     {
       "ID": 2,
       "ID_Usuario": 1,
       "produtosFavoritos": [
-        {
-
-        }
-        
+        {}
       ],
       "id": "0fba"
     }

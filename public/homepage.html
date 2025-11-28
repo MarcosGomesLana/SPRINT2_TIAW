@@ -24,7 +24,7 @@
   <!--IMPORTANDO MODULO DE FUNÇÃO JAVA SCRIPT-->
   
 
-<body>
+<body onload="HomePageLogin()">
   <!--HEADER-->
 <header class="header">
   <!-- NAV-PRIMARY -->
@@ -37,7 +37,7 @@
       <!-- ícones à direita -->
       <ul class="navbar-nav d-flex flex-row align-items-center">
         <!-- Ícone de coração (link simples) -->
-        <li class="nav-item me-2">
+        <li class="common-user" class="nav-item me-2" style="display: none;">
           <a class="nav-link" href="favorito.html" aria-label="Favoritos">
             <i class="bi bi-heart" style="color:#ffffff;"></i>
           </a>
@@ -78,7 +78,7 @@
           </li>
 
           <!-- Dropdown-->
-          <li class="nav-item dropdown">
+          <li class="common-user"  class="nav-item dropdown" style="display: none;">
             <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
               data-bs-toggle="dropdown" aria-expanded="false" style="color:#f6ecdc; background-color: transparent; border: none;">
               Cadastro
